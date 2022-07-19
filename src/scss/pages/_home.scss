@@ -1,0 +1,233 @@
+// Специфичные стили страницы Home
+.tours {
+  padding-bottom: 25px;
+
+  @include xs-block {
+    padding-top: 30px;
+  }
+
+  @include xl-block {
+    padding-bottom: 45px;
+  }
+
+  &__header {
+    margin-bottom: 8px;
+    color: #000000;
+
+    @include md-block {
+      margin-bottom: 15px;
+      font-size: 48px;
+      line-height: 60px;
+      text-align: left;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.005em;
+    color: #656565;
+    text-align: center;
+
+    @include md-block {
+      margin-bottom: 35px;
+      text-align: left;
+      font-size: 19px;
+      line-height: 24px;
+    }
+  }
+}
+
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 295px;
+  margin: auto;
+
+  @include md-block {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    @include md-block {
+      flex: 1;
+    }
+
+    @include xl-block {
+      flex: 1 0 300px;
+    }
+  }
+
+  &__button {
+    height: 70px;
+    line-height: 70px;
+
+    @include md-block {
+      padding: 0 30px;
+      flex: 1;
+    }
+  }
+}
+
+.number-people {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 1px;
+    height: 60px;
+    background: #D7D7D7;
+  }
+
+  &__field {
+    height: 70px;
+    background: #F7F7F7;
+    border-radius: 3px;
+  }
+
+  &__date-input {
+    width: 100%;
+    height: 100%;
+    padding: 27px 29px;
+    text-align: center;
+    background: #F7F7F7;
+  }
+}
+
+.select-field {
+  position: relative;
+  height: 70px;
+  padding: 0 30px;
+  line-height: 70px;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.005em;
+  color: #525252;
+  background: #F7F7F7;
+  border-radius: 3px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.qty-input {
+  position: relative;
+  //height: 74px;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #F7F7F7;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all linear .3s;
+
+  &.active {
+    height: 70px;
+    opacity: 1;
+  }
+
+  &__count {
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 0.005em;
+    color: #353535;
+    text-align: center;
+    background: transparent;
+  }
+}
+
+.qty-btn {
+  //pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 57px;
+  background: #fff;
+  border-radius: 3px;
+  background-image: url('../img/quinity-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--minus {
+    left: 10px;
+    transform: translate(0, -50%) rotate(-180deg);
+  }
+
+  &--add {
+    right: 10px;
+    transform: translate(0, -50%);
+  }
+}
+
+.offers {
+  position: relative;
+  padding-bottom: 108px;
+  padding-top: 25px;
+
+  &:before {
+    @include xl-block {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      width: 133px;
+      height: 442px;
+      background-image: url("data:image/svg+xml,%3Csvg width='133' height='442' viewBox='0 0 133 692' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M-14.2705 3.99988C372.781 189.167 -157.5 424 -76 690' stroke='%23E3E3E3' stroke-width='7' stroke-dasharray='14 14'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  @include md-block {
+    padding-bottom: 90px;
+  }
+
+  &__header {
+    margin-bottom: 25px;
+    color: #000;
+
+    @include md-block {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+}
+
+.popular {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  padding: 14px 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.005em;
+  background: #FF773D;
+  border-radius: 3px;
+  color: #fff;
+}

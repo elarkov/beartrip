@@ -1,0 +1,12 @@
+mixin popup()
+  .popup-overlay(data-popup="popup-order") 
+    .popup 
+      button.close-btn.popup__btn-close(data-target="popup-order") 
+      .popup__inner
+        p.popup__title Оставьте заявку
+        p.popup__subtext В течении для с Вами свяжется менеджер
+        form.popup-form(autocomplete="off")
+          input.popup-form__input(type="text" name="client" placeholder="Ф.И.О" required)
+          input.popup-form__input(type="tel" name="phone" maxlength="18" data-tel-input placeholder="Телефон" required)
+          button.button.popup-form__button(type="submit" disabled) Отправить заявку
+      .privacy Оставляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> сайта

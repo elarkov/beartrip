@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220719134923">
+    <title>Document</title>
+  </head>
+  <body> 
+        <div class="overlay js-side-menu-overlay">
+          <div class="side-menu js-side-menu" data-id="menu">
+            <div class="side-menu__top"><a class="side-menu__close js-side-menu-close" href="#!">Закрыть</a>
+              <ul class="main-nav"> 
+                <li class="main-nav__item"> <a href="">О проекте</a></li>
+                <li class="main-nav__item"> <a href="">Команда</a></li>
+                <li class="main-nav__item main-nav__item--logo main-nav__item--hidden"><a href=""> <picture><source srcset="img/BearTrip.webp" type="image/webp"><img src="img/BearTrip.png" alt=""></picture></a></li>
+                <li class="main-nav__item"> <a href="">Партнерам</a></li>
+                <li class="main-nav__item"> <a href="">Туристам</a></li>
+              </ul>
+              <div class="auth"> 
+                <button class="button auth__button js-btn-auth" data-target="popup-order">Вход</button>
+              </div><a class="logo side-menu__logo" href="#!"><picture><source srcset="img/logo-green.webp" type="image/webp"><img src="img/logo-green.png" alt=""></picture></a>
+              <button class="signup side-menu__signup js-btn-auth" data-target="popup-order">Вход</button>
+            </div>
+            <ul class="menu side-menu__menu"> 
+              <li class="menu__item"> <a class="menu__link" href="">О проекте</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Партнерам</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Команда</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Конструктор туров</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Путеводители</a></li>
+              <li class="menu__item"><a class="menu__link" href="">Регионы <span class="arrow"></span></a>
+                <ul class="dropdown">
+                  <li> <a href="#!">О регионе </a></li>
+                  <li> <a href="#!">Как добраться</a></li>
+                  <li> <a href="#!">Где остановиться </a></li>
+                  <li> <a href="#!">Что посетить </a></li>
+                  <li> <a href="#!">Где поесть </a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><a class="menu__link" href="">Спецпредложения</a></li>
+            </ul><img class="side-menu__decore" src="img/decore-mob.svg" alt="">
+          </div>
+          <div class="overlay__layer js-side-menu-close"></div>
+        </div>
+        <section class="s-main">
+          <div class="container s-main__container">
+            <header class="header">
+              <div class="container header__container">
+                <nav class="navigation"> 
+                                <div class="sandwich main-header__sandwich js-side-menu-open" data-id="menu">
+                                  <div class="sandwich__inner"></div>
+                                </div><a class="logo header__logo" href="#"> <picture><source srcset="img/logo-white.webp" type="image/webp"><img src="img/logo-white.png" alt=""></picture></a>
+                  <ul class="main-nav"> 
+                    <li class="main-nav__item"> <a href="">О проекте</a></li>
+                    <li class="main-nav__item"> <a href="">Команда</a></li>
+                    <li class="main-nav__item main-nav__item--logo"><a href=""> <picture><source srcset="img/logo-white.webp" type="image/webp"><img src="img/logo-white.png" alt=""></picture></a></li>
+                    <li class="main-nav__item"> <a href="">Партнерам</a></li>
+                    <li class="main-nav__item"> <a href="">Туристам</a></li>
+                  </ul>
+                  <div class="auth"> 
+                    <button class="button auth__button js-btn-auth" data-target="popup-order">Вход</button>
+                    <div class="profile"><picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt=""></picture></div>
+                  </div>
+                </nav>
+              </div>
+            </header>
+            <section class="hero"> 
+              <div class="container hero__container"> 
+                <h1 class="s-header hero__header">начини своё путешествие с нами!</h1>
+              </div>
+            </section>
+          </div>
+        </section>
+        <main class="main">
+                <section class="tours"> 
+                  <div class="container tours__container"> 
+                    <h2 class="s-header tours__header">Подобрать тур</h2>
+                    <p class="tours__subtitle">Выберите параметры своего тура</p>
+                    <form class="filter-form" action="#!"> 
+                      <div class="filter-form__field"> 
+                        <div class="number-people">
+                          <div class="number-people__field"> 
+                            <input class="number-people__date-input" type="text" placeholder="17.03.2022">
+                          </div>
+                          <div class="number-people__field"> 
+                            <input class="number-people__date-input" type="text" placeholder="25.03.2022">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter-form__field"> 
+                        <div class="select-field">Количество взрослых <span class="arrow arrow--select"></div>
+                        <div class="qty-input"> 
+                          <button class="qty-btn qty-btn--minus" type="button"> </button>
+                          <input class="qty-input__count" type="number" min="0" max="10" value="1">
+                          <button class="qty-btn qty-btn--add" type="button"> </button>
+                        </div>
+                      </div>
+                      <div class="filter-form__field"> 
+                        <div class="select-field">Количество детей <span class="arrow arrow--select"></div>
+                        <div class="qty-input"> 
+                          <button class="qty-btn qty-btn--minus" type="button"> </button>
+                          <input class="qty-input__count" type="number" min="0" max="10" value="1">
+                          <button class="qty-btn qty-btn--add" type="button"> </button>
+                        </div>
+                      </div>
+                      <button class="button filter-form__button" type="submit">Подобрать тур</button>
+                    </form>
+                  </div>
+                </section>
+                <section class="offers"> 
+                  <div class="container offers__container"> 
+                    <h2 class="s-header offers__header">Спецпредложения</h2>
+                              <div class="offers__slider">
+                                <div class="slider js-slider">
+                                  <div class="swiper slider__swiper">
+                                    <div class="swiper-wrapper slider__wrapper">
+                                      <div class="swiper-slide slider__slide">
+                                        <div class="slider__item"><picture><source srcset="img/sliders/offer-1.webp" type="image/webp"><img src="img/sliders/offer-1.jpg" alt=""></picture>
+                                          <div class="popular">Популярное</div>
+                                          <div class="slider-text"> 
+                                            <p class="slider-text__title">Кавказ</p>
+                                            <p class="slider-text__date">08.05.2022</p>
+                                            <p class="slider-text__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil</p><a class="slider-text__link" href="#!">Подробнее<img src="img/sliders/arrow-card.svg" alt=""></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide slider__slide">
+                                        <div class="slider__item"><picture><source srcset="img/sliders/offer-2.webp" type="image/webp"><img src="img/sliders/offer-2.jpg" alt=""></picture>
+                                          <div class="slider-text"> 
+                                            <p class="slider-text__title">Кабардино-Балкария</p>
+                                            <p class="slider-text__date">08.05.2022</p>
+                                            <p class="slider-text__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil</p><a class="slider-text__link" href="#!">Подробнее<img src="img/sliders/arrow-card.svg" alt=""></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide slider__slide">
+                                        <div class="slider__item"><picture><source srcset="img/sliders/offer-3.webp" type="image/webp"><img src="img/sliders/offer-3.jpg" alt=""></picture>
+                                          <div class="popular">Скидка 15%</div>
+                                          <div class="slider-text"> 
+                                            <p class="slider-text__title">Джилы су</p>
+                                            <p class="slider-text__date">c 08.05.2022 по 21.05.2022</p>
+                                            <p class="slider-text__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil</p><a class="slider-text__link" href="#!">Подробнее<img src="img/sliders/arrow-card.svg" alt=""></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="swiper-slide slider__slide">
+                                        <div class="slider__item"><picture><source srcset="img/sliders/offer-3.webp" type="image/webp"><img src="img/sliders/offer-3.jpg" alt=""></picture>
+                                          <div class="slider-text"> 
+                                            <p class="slider-text__title">Кавказ</p>
+                                            <p class="slider-text__date">08.05.2022</p>
+                                            <p class="slider-text__description">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil</p><a class="slider-text__link" href="#!">Подробнее<img src="img/sliders/arrow-card.svg" alt=""></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="swiper-button-prev slider__arrow slider__arrow--prev"></div>
+                                  <div class="swiper-button-next slider__arrow slider__arrow--next"></div>
+                                </div>
+                              </div>
+                  </div>
+                </section>
+        </main>
+        <footer class="main-footer">
+          <div class="container main-footer__container"> 
+            <div class="column-left"> <a class="logo column-left__logo" href="#!"> <picture><source srcset="img/logo-green.webp" type="image/webp"><img src="img/logo-green.png" alt=""></picture></a>
+              <p class="copyright">При полном или частичном использовании материалов с сайта ссылка на источник обязательна</p>
+            </div>
+            <div class="column-center"> 
+              <div class="column-center__item"> 
+                <p class="column-center__header">Пользователям</p>
+                <div class="column-center__links"> <a href="#!">Спецпредложения</a><a href="">Контруктор туров</a><a href="">Партнерам</a><a href="">Вход</a><a href="">Регистрация</a><a href="">О проекте</a><a href="">Отзывы</a></div>
+              </div>
+              <div class="column-center__item"> 
+                <p class="column-center__header">Информация</p>
+                <div class="column-center__links"> <a href="#!">Как купить тур</a><a href="">Путеводители</a><a href="">Информация о сервисе</a><a href="">Корпоративным клиентам</a><a href="">Политика возврата</a><a href="">Вопросы и ответы</a><a href="">Акции</a></div>
+              </div>
+              <div class="column-center__item"> 
+                <p class="column-center__header">Полезное</p>
+                <div class="column-center__links"> <a href="#!">Новости</a><a href="">О нас</a><a href="">Контакты</a><a href="">Отзывы</a><a href="">Политика конфиденциальности</a><a href="">Галерея</a></div>
+              </div>
+            </div>
+            <div class="column-right"> 
+              <div class="column-right__title">Наши социальные сети</div>
+              <ul class="social"> 
+                <li class="social__item"><a class="social__link social__link--instagram" href="#!"></a></li>
+                <li class="social__item"><a class="social__link social__link--telegram" href="#!"> </a></li>
+                <li class="social__item"><a class="social__link social__link--whatsapp" href="#!"> </a></li>
+                <li class="social__item"><a class="social__link social__link--vk" href="#!"> </a></li>
+              </ul>
+              <div class="column-right__title">Контакты</div>
+              <div class="contacts"> <a class="contacts__item contacts__item--phone" href="tel:8 800 000-00-00">8 800 000-00-00</a><a class="contacts__item contacts__item--mail" href="mailto:Pochta@gmail.com">Pochta@gmail.com</a></div>
+            </div>
+          </div>
+        </footer>
+        <div class="popup-overlay" data-popup="popup-order"> 
+          <div class="popup"> 
+            <button class="close-btn popup__btn-close" data-target="popup-order"> </button>
+            <div class="popup__inner">
+              <p class="popup__title">Оставьте заявку</p>
+              <p class="popup__subtext">В течении для с Вами свяжется менеджер</p>
+              <form class="popup-form" autocomplete="off">
+                <input class="popup-form__input" type="text" name="client" placeholder="Ф.И.О" required>
+                <input class="popup-form__input" type="tel" name="phone" maxlength="18" data-tel-input placeholder="Телефон" required>
+                <button class="button popup-form__button" type="submit" disabled>Отправить заявку</button>
+              </form>
+            </div>
+            <div class="privacy">Оставляя заявку вы соглашаетесь с <a href="#">политикой конфиденциальности</a> сайта</div>
+          </div>
+        </div>
+  </body>
+  <script src="js/app.min.js?_v=20220719134923"> </script>
+</html>

@@ -1,0 +1,51 @@
+mixin slide-menu()
+  .overlay.js-side-menu-overlay
+    .side-menu.js-side-menu(data-id="menu")
+      .side-menu__top
+        a(href="#!").side-menu__close.js-side-menu-close Закрыть
+        ul.main-nav 
+          li.main-nav__item 
+            a(href="") О проекте
+          li.main-nav__item 
+            a(href="") Команда
+          li.main-nav__item.main-nav__item--logo.main-nav__item--hidden
+            a(href="") 
+              img(src="img/BearTrip.png", alt="")
+          li.main-nav__item 
+            a(href="") Партнерам
+          li.main-nav__item 
+            a(href="") Туристам
+        .auth 
+          button.button.auth__button.js-btn-auth(data-target="popup-order") Вход
+        a.logo.side-menu__logo(href="#!")
+          img(src="img/logo-green.png", alt="")
+        button.signup.side-menu__signup.js-btn-auth(data-target="popup-order") Вход
+      ul.menu.side-menu__menu 
+        li.menu__item 
+          a.menu__link(href="") О проекте
+        li.menu__item
+          a.menu__link(href="") Партнерам
+        li.menu__item
+          a.menu__link(href="") Команда
+        li.menu__item
+          a.menu__link(href="") Конструктор туров
+        li.menu__item
+          a.menu__link(href="") Путеводители
+        li.menu__item
+          a.menu__link(href="") Регионы <span class="arrow"></span>
+          
+          ul.dropdown
+            li 
+              a(href="#!") О регионе 
+            li 
+              a(href="#!") Как добраться
+            li 
+              a(href="#!") Где остановиться 
+            li 
+              a(href="#!") Что посетить 
+            li 
+              a(href="#!") Где поесть 
+        li.menu__item
+          a.menu__link(href="") Спецпредложения
+      img.side-menu__decore(src="img/decore-mob.svg", alt="")
+    .overlay__layer.js-side-menu-close

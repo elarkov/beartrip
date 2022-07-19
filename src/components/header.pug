@@ -1,0 +1,29 @@
+mixin header()
+  section.s-main
+    .container.s-main__container
+      header.header
+        .container.header__container
+          nav.navigation 
+            include ../components/sandwich.pug
+            +sandwich
+            a.logo.header__logo(href="#") 
+              img(src="img/logo-white.png", alt="")
+            ul.main-nav 
+              li.main-nav__item 
+                a(href="") О проекте
+              li.main-nav__item 
+                a(href="") Команда
+              li.main-nav__item.main-nav__item--logo
+                a(href="") 
+                  img(src="img/logo-white.png", alt="")
+              li.main-nav__item 
+                a(href="") Партнерам
+              li.main-nav__item 
+                a(href="") Туристам
+            .auth 
+              button.button.auth__button.js-btn-auth(data-target="popup-order") Вход
+              .profile
+                img(src="img/avatar.jpg", alt="")
+      section.hero 
+        .container.hero__container 
+          h1.s-header.hero__header начини своё путешествие с нами!

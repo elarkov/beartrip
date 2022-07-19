@@ -1,0 +1,25 @@
+mixin filter()
+  section.tours 
+    .container.tours__container 
+      h2.s-header.tours__header Подобрать тур
+      p.tours__subtitle Выберите параметры своего тура
+      form.filter-form(action="#!") 
+        .filter-form__field 
+          .number-people
+            .number-people__field 
+              input.number-people__date-input(type="text" placeholder="17.03.2022")
+            .number-people__field 
+              input.number-people__date-input(type="text" placeholder="25.03.2022")
+        .filter-form__field 
+          .select-field Количество взрослых <span class="arrow arrow--select">
+          .qty-input 
+            button.qty-btn.qty-btn--minus(type="button") 
+            input.qty-input__count(type="number" min="0" max="10" value="1")
+            button.qty-btn.qty-btn--add(type="button") 
+        .filter-form__field 
+          .select-field Количество детей <span class="arrow arrow--select">
+          .qty-input 
+            button.qty-btn.qty-btn--minus(type="button") 
+            input.qty-input__count(type="number" min="0" max="10" value="1")
+            button.qty-btn.qty-btn--add(type="button") 
+        button.button.filter-form__button(type="submit") Подобрать тур
